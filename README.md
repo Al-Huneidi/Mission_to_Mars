@@ -51,3 +51,18 @@ Sites scraped:
 	- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
 
 	- https://mars.nasa.gov/news/
+	
+
+# Challenge
+Pull high-resolution images of Mars hemisphere and use DevTool to find the proper elements to scrape.  Update the Mongo database with the new data and later the design of the web app to accommodate these images.
+
+## Objectives
+
+	- Use BeautifulSoup and Splinter to automate a web browser and scrape hit-resolution images.
+
+	- Use a MongoDB to store data from the web scrape.
+
+	- Update the web application and Flask to display the data from the web scrape.
+
+	- Use Bootstrap to style the web app.
+
