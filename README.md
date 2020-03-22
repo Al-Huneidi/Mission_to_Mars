@@ -21,6 +21,8 @@ Using web scraping to gather the latest data about the planet Mars by pulling da
   
   ![alt_text](https://github.com/Al-Huneidi/Mission_to_Mars/blob/master/screenshots/Portfolio_1.png)
   
+  ![alt_text](https://github.com/Al-Huneidi/Mission_to_Mars/blob/master/screenshots/Portfolio_2.png)
+  
   ![alt_text](
 
 
