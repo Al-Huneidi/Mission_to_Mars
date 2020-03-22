@@ -2,7 +2,7 @@
 Web scrape information about Mars for analysis and create an app to display analysis.
 
 # Project Overview
-Using web scraping to gather the latest data about the planet Mars by pulling data from multiple websites, storing it in a database then presenting the collected data on a webpage.
+Using web scraping to gather the latest data about the planet Mars by pulling data from multiple websites, storing it in a database then presenting the collected data for a web app.
 
 
 ## Objective
@@ -11,11 +11,12 @@ Created several files which were all used to create the web page for visualizati
 
 	- In Jupyter Notebook, create a dataframe to hold a table of facts about the planet Mars.
 	
-	- In VS Code created an html file to identify the elements and classes to scrape.
+	- After using CHrome DevTools to inspect the html, in VS Code create an html file to identify
+	the elements and classes to scrape.
 	
-	- In VS Code created a file execute the scraping of the websites selected.
+	- In VS Code create a file execute the scraping of the websites selected.
 	
-	- In VS Code created a file using FLASK to create a web page with the results of the scraping.
+	- In VS Code create a file using FLASK to create a web page with the results of the scraping.
 	
 Finally, create a portfoio.
 
@@ -28,14 +29,14 @@ Steps:
 	
 	3. Use MongoBD to store data retrieved for easy access.
 	
-	4. Use Flask visualize scraping results.
+	4. Use Flask visualize scraping results on a web app.
 	
 	5. Create Portfolio
 	
 	- Selected one of the templates provided and customized the html and css files to create my own portfolio.
 	
 	
-  Images:
+  Portfolio Images:
   
   ![alt_text](https://github.com/Al-Huneidi/Mission_to_Mars/blob/master/screenshots/Portfolio_1.png)
   
@@ -65,4 +66,8 @@ Pull high-resolution images of Mars hemisphere and use DevTool to find the prope
 	- Update the web application and Flask to display the data from the web scrape.
 
 	- Use Bootstrap to style the web app.
+	
+Site scraped:
+
+	- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
 
