@@ -19,6 +19,8 @@ Using web scraping to gather the latest data about the planet Mars by pulling da
 	- Selected one of the templates provided and customized the html and css files to create my own portfolio.
   Images:
   
+  ![alt_text](https://github.com/Al-Huneidi/Mission_to_Mars/blob/master/screenshots/Portfolio_1.png)
+  
   ![alt_text](
 
 
