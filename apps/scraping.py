@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
 
 # Import Dependencies
 from splinter import Browser
@@ -15,6 +13,7 @@ executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
 browser = Browser('chrome', **executable_path)
 
 def scrape_all():
+    
     # Initiate headless driver for deployment
     browser = Browser('chrome', executable_path='chromedriver', headless=True)
     news_title, news_paragraph = mars_news(browser)
@@ -53,7 +52,7 @@ def mars_news(browser):
     return news_title, news_p
     
 
-# ### Featured Images
+# Featured Images
 def featured_image(browser):
 
     # Visit URL
@@ -73,6 +72,7 @@ def featured_image(browser):
     return img_url
 
 def mars_facts():
+    
     # Add try/except for error handling
     try:
         # Use 'read_html' to scrape the facts table into a dataframe
@@ -80,6 +80,7 @@ def mars_facts():
 
     except BaseException:
         return None
+    
     # Assign columns and set index of dataframe
     df.columns=['Description', 'Mars']
     df.set_index('Description', inplace=True)
@@ -90,7 +91,55 @@ if __name__ == "__main__":
     # If running as script, print scraped data
     print(scrape_all())
 
+# Challenge
+# Collect Information of the Mars Hemispheres ~ All Hemisphere Images.
+url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
+browser.visit(url)
 
+def hemispheres(browser):
+    
+    # The URL where we are looking for the 4 hemisphere images of Mars.
+    url = (
+        "https://astrogeology.usgs.gov/search/"
+        "results?q=hemisphere+enhanced&k1=target&v1=Mars"
+    )
+    browser.visit(url)
+    
+    # Loop through the images on the site, click the link, look for the css element, 
+    # return the image link for each image.
+    hemisphere_image_urls = []
+    for i in range(4):
+        # Find the css element in the loop
+        browser.find_by_css("a.product-item h3")[i].click()
+        hemi_data = scrape_hemisphere(browser.html)
+        # Append hemisphere image to a list
+        hemisphere_image_urls.append(hemi_data)
+        # Go back until loop finishes
+        browser.back()
+    return hemisphere_image_urls
+
+def scrape_hemisphere(html_text):
+    
+    # Using BeautifulSoup, parse html text
+    hemi_soup = BeautifulSoup(html_text, "html.parser")
+    # add try/except to account for any errors
+    try:
+        title_elem = hemi_soup.find("h2", class_="title").get_text()
+        sample_elem = hemi_soup.find("a", text="Sample").get("href")
+    except AttributeError:
+        # Image error will return None, to indicate there is either no image or no title for an image URL.
+        title_elem = None
+        sample_elem = None
+    # Put image URL and text into a dictionary.
+    hemispheres = {
+        "title": title_elem,
+        "img_url": sample_elem
+    }
+    return hemispheres
+
+if __name__ == "__main__":
+    # If running as script, print scraped data
+    print(scrape_all())
 
 
 

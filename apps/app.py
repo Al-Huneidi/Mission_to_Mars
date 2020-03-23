@@ -21,5 +21,12 @@ def scrape():
    mars.update({}, mars_data, upsert=True)
    return "Scraping Successful!"
 
+@app.route("/hemispheres")
+def hemi_scrape():
+   hemispheres = mongo.db.mars
+   hemispheres_data = scraping.scrape_all()
+   hemispheres.update({}, hemispheres_data, upsert=True)
+   return({"title", "img_url"})
+
 if __name__ == "__main__":
    app.run()
