@@ -4,6 +4,12 @@ Web scrape information about Mars for analysis and create an app to display anal
 # Project Overview
 Using web scraping to gather the latest data about the planet Mars by pulling data from multiple websites, storing it in a database then presenting the collected data for a web app.
 
+### Resources| Sites scraped:
+
+	- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
+
+	- https://mars.nasa.gov/news/
+
 
 ## Objective
 
@@ -11,7 +17,7 @@ Created several files which were all used to create the web page for visualizati
 
 	- In Jupyter Notebook, create a dataframe to hold a table of facts about the planet Mars.
 	
-	- After using CHrome DevTools to inspect the html, in VS Code create an html file to identify
+	- After using Chrome DevTools to inspect the html, in VS Code create an html file to identify
 	the elements and classes to scrape.
 	
 	- In VS Code create a file execute the scraping of the websites selected.
@@ -47,11 +53,7 @@ Steps:
   ![alt_text](https://github.com/Al-Huneidi/Mission_to_Mars/blob/master/screenshots/Portfolio_4.png)
 
 
-Sites scraped:
 
-	- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
-
-	- https://mars.nasa.gov/news/
 	
 
 # Challenge
