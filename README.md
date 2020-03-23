@@ -59,6 +59,12 @@ Steps:
 # Challenge
 Pull high-resolution images of Mars hemisphere and use DevTool to find the proper elements to scrape.  Update the Mongo database with the new data and later the design of the web app to accommodate these images.
 
+
+### Resources | Site scraped:
+
+	- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
+	
+
 ## Objectives
 
 	- Use BeautifulSoup and Splinter to automate a web browser and scrape hit-resolution images.
@@ -69,7 +75,5 @@ Pull high-resolution images of Mars hemisphere and use DevTool to find the prope
 
 	- Use Bootstrap to style the web app.
 	
-Site scraped:
 
-	- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
 
