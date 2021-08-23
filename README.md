@@ -24,7 +24,7 @@ Created several files which were all used to create the web page for visualizati
 	
 	- In VS Code create a file using FLASK to create a web page with the results of the scraping.
 	
-Finally, create a portfoio.
+Finally, create a portfolio.
 
 Steps:
 
