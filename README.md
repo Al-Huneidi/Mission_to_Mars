@@ -4,7 +4,7 @@ Web scrape information about Mars for analysis and create an app to display anal
 # Project Overview
 Using web scraping to gather the latest data about the planet Mars by pulling data from multiple websites, storing it in a database then presenting the collected data for a web app.
 
-### Resources| Sites scraped:
+### Resources | Sites scraped:
 
 	- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
 
